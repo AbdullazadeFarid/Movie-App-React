@@ -1,0 +1,20 @@
+.all_products {
+  border-radius: 26px;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.all_products:hover {
+  transform: scale(1.05);
+}
+.all_products .products .image .products_image {
+  height: 500px;
+  border-radius: 20px 20px 0px 0px;
+}
+.all_products .products .description {
+  text-align: center;
+  width: 335px;
+}
+.all_products .products .description .title {
+  font-size: 22px;
+  font-weight: 700;
+}/*# sourceMappingURL=products.css.map */

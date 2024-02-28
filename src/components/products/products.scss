@@ -1,0 +1,26 @@
+.all_products {
+  border-radius: 26px;
+  background-color: lightgrey;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+  .products {
+    .image {
+      .products_image {
+        height: 500px;
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+
+    .description {
+      text-align: center;
+      width: 335px;
+
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+  }
+}
