@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {SMALL_IMG_COVER_BASE_URL } from '../../api'
 import "./products.css"
+import Desc from '../desc/desc'
 
+// // window.location.href= `/product/${item._id}`;
 
 
 export default function Products({item}) {
+
 
   return (
 
@@ -22,9 +25,15 @@ export default function Products({item}) {
                        <p>{item.release_date}</p>
 
             </div>
-        </div>
 
+        </div>
 
     </div>
   )
 }
+
+
+
+
+
+

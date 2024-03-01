@@ -19,6 +19,7 @@ function App() {
             <Route path="/populary" element={<Popularity />} />
           </Routes>
         </div>
+
       </div>
     </Router>
   );

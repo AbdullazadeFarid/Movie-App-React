@@ -2,6 +2,7 @@
   border-radius: 26px;
   background-color: lightgrey;
   cursor: pointer;
+  transition: all ease 0.4s;
 }
 .all_products:hover {
   transform: scale(1.05);
