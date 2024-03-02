@@ -6,7 +6,6 @@ async function Getdata(path) {
     try {
       const response = await axios.get(
         `${BASE_URL}${path}?api_key=${API_KEY}`
-        // `${BASE_URL}/movie/${path}?api_key=${API_KEY}`
 
       );
       console.log(response);

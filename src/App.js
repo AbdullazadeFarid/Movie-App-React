@@ -7,6 +7,7 @@ import Header from "./shared/header/header";
 import logo from "./assets/image/logo.png";
 import Home from "./page/home/home";
 import Popularity from "./page/popularity/popularity";
+import Movie_Info from "./page/movie_info/movieInfo";
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/populary" element={<Popularity />} />
+            <Route path="/movie/:id" element={<Movie_Info/>} />
           </Routes>
         </div>
-
       </div>
     </Router>
   );
