@@ -3,14 +3,19 @@
   background-color: lightgrey;
   cursor: pointer;
   transition: all ease 0.4s;
+  margin-top: 3%;
+
   &:hover {
-    transform: scale(1.05);
+    background-color: #000;
+    color: #fff;
   }
+
   .products {
     .image {
       .products_image {
         height: 500px;
         border-radius: 20px 20px 0px 0px;
+        width: 100%;
       }
     }
 

@@ -9,7 +9,7 @@
   .header_left {
     display: flex;
     align-items: center;
-    width: 35%;
+    width: 33%;
     gap: 5%;
     .header_img {
       width: 15%;
@@ -18,7 +18,7 @@
 
   .header_right {
     display: flex;
-    width: 65%;
+    width: 33%;
     gap: 8%;
 
     .link {
@@ -26,6 +26,17 @@
       text-decoration: none;
       font-size: 20px;
       color: #000;
+    }
+  }
+
+  .header_input {
+    width: 33%;
+
+    .inp{
+      padding: 9px 25px 9px 18px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid;
     }
   }
 }

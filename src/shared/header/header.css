@@ -10,7 +10,7 @@
 .header .header_left {
   display: flex;
   align-items: center;
-  width: 35%;
+  width: 33%;
   gap: 5%;
 }
 .header .header_left .header_img {
@@ -18,7 +18,7 @@
 }
 .header .header_right {
   display: flex;
-  width: 65%;
+  width: 33%;
   gap: 8%;
 }
 .header .header_right .link {
@@ -26,6 +26,15 @@
   text-decoration: none;
   font-size: 20px;
   color: #000;
+}
+.header .header_input {
+  width: 33%;
+}
+.header .header_input .inp {
+  padding: 9px 25px 9px 18px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid;
 }
 
 .active {

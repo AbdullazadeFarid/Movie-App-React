@@ -3,13 +3,16 @@
   background-color: lightgrey;
   cursor: pointer;
   transition: all ease 0.4s;
+  margin-top: 3%;
 }
 .all_products:hover {
-  transform: scale(1.05);
+  background-color: #000;
+  color: #fff;
 }
 .all_products .products .image .products_image {
   height: 500px;
   border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 .all_products .products .description {
   text-align: center;

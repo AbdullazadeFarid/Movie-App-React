@@ -2,8 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
-    justify-content: space-between;
+    justify-content: center;
     row-gap: 37px;
-    margin-top: 3%;
+    background-color: #2f2f24;
+    ;
+
 
 }
