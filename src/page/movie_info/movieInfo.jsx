@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
-import { SMALL_IMG_COVER_BASE_URL } from '../../api';
+import { BACKDROP_BASE_URL, SMALL_IMG_COVER_BASE_URL } from '../../api';
 import "./movieInfo.css"
 
 export default function Movie_Info() {
@@ -20,7 +20,11 @@ export default function Movie_Info() {
   return (
     <div
     style={{
-      backgroundImage : `url(${SMALL_IMG_COVER_BASE_URL}${data.backdrop_path})`}}
+      background: data
+        ? `linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+           url("${BACKDROP_BASE_URL}${data.backdrop_path}") no-repeat center / cover`
+        : "black",
+    }}
     className='movie_info'>
 
       <div className='movie_info_products'>
