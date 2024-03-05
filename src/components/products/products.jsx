@@ -6,8 +6,7 @@ import { FiveStarRating } from '../stars/stars'
 import "./products.css"
 
 export default function Products({ item, sendData }) {
-  // Генерируем случайное значение рейтинга (это может быть ваша логика)
-  const rating = Math.random() * 5;
+  const rating = item?.vote_average / 2
 
   const HandleClick = () => {
     sendData(item);
@@ -21,8 +20,8 @@ export default function Products({ item, sendData }) {
         </div>
         <div className='description'>
           <span className='title'>{item.title}</span>
-          <p>{item.release_date}</p>
         <FiveStarRating rating={rating} />
+          <p>{item.release_date}</p>
         </div>
       </div>
     </div>
