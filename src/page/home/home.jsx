@@ -5,6 +5,7 @@ import Products from '../../components/products/products';
 
 import Getdata from '../../helpers/fetch';
 import { useNavigate } from 'react-router-dom';
+import Not_found from '../../components/not found/not_found';
 
 
 
@@ -21,15 +22,29 @@ export default function Home({ searchTerm }) {
     });
   }, [searchTerm]);
 
+  console.log(data.data);
+
   const handleClickProducts = (productsData) => {
     navigate(`/movie/${productsData.id}`, { state: productsData });
   };
 
   return (
     <>
-      {data.map((item, index) => (
-        <Products key={index} item={item} sendData={handleClickProducts} />
-      ))}
+      {
+       data.length !== 0 ? (
+          data.map((item, index) => (
+
+              <Products key={index} item={item} sendData={handleClickProducts}/>
+            )
+          )
+          )
+          :
+          (
+             <Not_found/>
+          )
+
+  }
+
     </>
   );
 }

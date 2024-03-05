@@ -4,6 +4,7 @@
 
   import Getdata from '../../helpers/fetch';
   import { useNavigate } from 'react-router-dom';
+import Not_found from '../../components/not found/not_found';
 
 
   export default function Popularity({ searchTerm }) {
@@ -16,6 +17,7 @@
       Getdata('/movie/now_playing').then((result) => {
         const filteredData = result.filter(item => item.title.toLowerCase().includes(searchTerm.toLowerCase()));
         setData(filteredData);
+
       });
     }, [searchTerm]);
 
@@ -25,12 +27,22 @@
 
         }
 
+        console.log(data);
+
     return (
       <>
-        {data.map((item , index) => (
-          <Products key={index} item={item} sendData={handleClickProducts} />
+        {
+          data.length !== 0 ? (
+                  data.map((item,index)=>{
+                        return <Products item={item} sendData={handleClickProducts}/>
+                      }
+                      )
 
-        ))}
+          )
+          : (<Not_found/>)
+
+        }
+
       </>
     );
   }
