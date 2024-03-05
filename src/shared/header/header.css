@@ -6,12 +6,14 @@
   background-color: #fff;
   top: 0;
   z-index: 1;
+  background-color: #333;
 }
 .header .header_left {
   display: flex;
   align-items: center;
   width: 33%;
   gap: 5%;
+  color: #fff;
 }
 .header .header_left .header_img {
   width: 15%;
@@ -25,7 +27,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 20px;
-  color: #000;
+  color: #fff;
 }
 .header .header_input {
   width: 33%;
